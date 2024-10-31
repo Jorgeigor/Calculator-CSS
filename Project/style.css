@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color:  #eae4d3;
+    width: 310px;
+    height: 380px;
+    border-radius: 8px;
+    padding-inline: 15px;
+    padding-bottom: 15px;
+    
+}
+
+#content-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+  
+    
+}
+#result-panel{
+    display: flex;
+    justify-content: end;
+    font-size: 27px;
+    align-items: end;
+    border-radius: 10px;
+    padding-right: 10px;
+    width: 286px;
+    height: 65px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#content-calculator{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 50px);
+    width: 100%;
+    grid-gap: 5px;
+    
+    
+}
+
+.clean-buttom, 
+.division-buttom, 
+.multiplication-buttom, 
+.subtraction-bottom, 
+.sum-buttom, 
+.result-buttom{
+    background-color: rgb(146, 134, 134);
+    border: 0;
+    cursor: pointer;
+}
+.clean-buttom:hover,
+.division-buttom:hover, 
+.multiplication-buttom:hover, 
+.subtraction-bottom:hover, 
+.sum-buttom:hover, 
+.result-buttom:hover{
+    background-color: rgb(90, 78, 78);
+}
+
+.digit-calculator{
+    border: solid  #eae4d3 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    
+}
+.digit-calculator:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.last-digits{
+    border: solid  #eae4d3 1px;
+    font-size: 15px;
+    height: 50px;
+    grid-column: span 2; /*Faz com que o item ocupe duas colunas*/
+    cursor: pointer;
+}
+
+
+
+.last-digits:hover{
+    background-color: rgb(216, 216, 216); 
+}
